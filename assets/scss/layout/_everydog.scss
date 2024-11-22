@@ -1,0 +1,74 @@
+// EVERYDOG START
+    .every_dog_section{
+        padding: 7rem 0;
+        background-color: #f8f9fa !important;
+        .text_box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2{
+                text-align: center;
+                margin-bottom: 1.5rem !important;
+                font-size: 2rem;
+            }
+            p{
+                text-align: center;
+                margin-bottom: 1.5rem !important;
+                font-size: 1.25rem;
+                font-weight: 300;
+                line-height: 1.8;
+                color: #868e96;
+                width: 70%;
+            }
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+            padding: 30px;
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                overflow: hidden;
+                padding-bottom: 86px;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    overflow: hidden;
+
+                    &:hover{
+                        transform: scale(1.15);
+                    }
+                }
+                div{
+                    width: 100%;
+                    position: absolute;
+                    background-color: white;
+                    z-index: 5;
+                    bottom: 0;
+                    padding: 30px;
+                    h3{
+                        font-size: 20px;
+                    }
+                }
+               
+              }
+          }
+
+    }
+    @media screen and (max-width:700px) {
+        .every_dog_section p{
+            width: 100% !important;
+        }
+        .every_dog_section .swiper{
+            padding: 10px !important;
+        }
+    }
+// EVERYDOG END
