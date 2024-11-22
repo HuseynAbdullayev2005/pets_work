@@ -86,5 +86,14 @@ li {
   #lifesec .mainn .mainRight .rightWords {
     height: auto;
   }
+  #lifesec .mainn .mainRight .rightWords p {
+    margin-left: 20px;
+  }
+  #lifesec .mainn .mainRight .rightWordss p {
+    margin-left: 20px;
+  }
+  #lifesec .mainn .mainRight .rightWordss h4 {
+    margin-left: 20px;
+  }
 }
 /* Dog Life End *//*# sourceMappingURL=main.css.map */
