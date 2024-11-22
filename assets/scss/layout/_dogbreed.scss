@@ -1,0 +1,206 @@
+#dogbreed {
+    .dogbreed {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        align-items: center;
+
+        .dogbreed_text {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+
+            .dogbreed_text_header {
+                color: #000;
+                font-size: 1.2rem;
+                line-height: 1.8;
+                padding-left: 50px;
+
+                h1 {
+                    text-align: center;
+                }
+            }
+
+            .dogbreed_text_content {
+                width: 80%;
+                margin: auto;
+                padding-left: 50px;
+
+                p {
+                    text-align: center;
+                    font-size: 1.5rem;
+                    opacity: 0.6;
+                    line-height: 1.8;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .dogbreed_images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .dogbreed_image {
+                position: relative;
+                width: 33%;
+                overflow: hidden;
+
+
+                .dogbreed_image_text {
+                    height: 0px;
+                    position: absolute;
+                    width: 100%;
+                    opacity: 0;
+                    z-index: 3;
+
+                    transition: height 0.7s ease-out;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 100px;
+
+                    .add {
+                        color: white;
+                        font-size: 40px;
+                    }
+
+                    .dog_name {
+                        color: white;
+                        font-size: 20px;
+                    }
+                }
+
+
+                img {
+                    width: 100%;
+                    height: 350px;
+                    object-fit: fill;
+                    transition: transform 0.7s ease;
+                }
+            }
+        }
+    }
+
+
+    .dogbreed_image:hover {
+        .dogbreed_image_text {
+            background-color: #000;
+            opacity: 0.6 !important;
+            height: 100% !important;
+
+        }
+
+        img {
+
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #dogbreed {
+        .dogbreed {
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+            align-items: center;
+
+            .dogbreed_text {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                align-items: center;
+
+                .dogbreed_text_header {
+                    color: #000;
+                    font-size: 1.2rem;
+                    line-height: 1.8;
+
+
+                    h1 {
+                        text-align: center;
+                    }
+                }
+
+                .dogbreed_text_content {
+                    width: 80%;
+                    margin: auto;
+
+
+                    p {
+                        text-align: center;
+                        font-size: 1.5rem;
+                        opacity: 0.6;
+                        line-height: 1.8;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .dogbreed_images {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                gap: 50px;
+                flex-direction: column;
+                justify-content: center;
+
+                .dogbreed_image {
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+
+
+                    .dogbreed_image_text {
+                        position: absolute;
+                        width: 100%;
+                        opacity: 0;
+                        z-index: 3;
+                        transition: opacity 0.7s ease;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        gap: 100px;
+
+                        .add {
+                            color: white;
+                            font-size: 40px;
+                        }
+
+                        .dog_name {
+                            color: white;
+                            font-size: 20px;
+                        }
+                    }
+
+
+                    img {
+                        width: 100%;
+                        height: 350px;
+                        object-fit: cover;
+                        transition: transform 0.7s ease;
+                    }
+                }
+            }
+        }
+
+
+        .dogbreed_image:hover {
+            .dogbreed_image_text {
+                background-color: #000;
+                opacity: 0.6 !important;
+                height: 100% !important;
+
+            }
+
+            img {
+
+                transform: scale(1.1);
+            }
+        }
+    }
+}
