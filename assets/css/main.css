@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+/* Dog Life START */
+#lifesec {
+  border: 1px solid rgba(0, 0, 0, 0);
+  min-height: 100vh;
+}
+#lifesec .lifewods {
+  font-family: "Open Sans", Arial, sans-serif;
+  text-align: center;
+  margin-top: 30px;
+}
+#lifesec .lifewods h1 {
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 50px;
+}
+#lifesec .lifewods p {
+  font-size: 14px;
+  color: #ffc107;
+  margin-top: 20px;
+}
+#lifesec .mainn {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+#lifesec .mainn .mainleft {
+  margin-top: 40px;
+  width: 30%;
+  margin-left: 30px;
+}
+#lifesec .mainn .mainleft .dogimg {
+  width: 100%;
+}
+#lifesec .mainn .mainleft img {
+  height: 100%;
+  width: 100%;
+}
+#lifesec .mainn .mainRight {
+  display: flex;
+  border: 1px solid none;
+  margin-top: 40px;
+  margin-right: 50px;
+}
+#lifesec .mainn .mainRight p {
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.774);
+  font-family: "Open Sans", Arial, sans-serif;
+  letter-spacing: 2px;
+}
+#lifesec .mainn .mainRight h4 {
+  color: #ffc107;
+}
+#lifesec .mainn .mainRight .rightWords {
+  max-width: 400px;
+  height: 400px;
+}
+#lifesec .mainn .mainRight .rightWordss {
+  max-width: 400px;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  #lifesec .mainn {
+    display: flex;
+    flex-direction: column;
+  }
+  #lifesec .mainn .mainleft {
+    width: 100%;
+    margin-left: 0;
+  }
+  #lifesec .mainn .mainRight {
+    display: flex;
+    flex-direction: column;
+  }
+  #lifesec .mainn .mainRight .rightWords {
+    height: auto;
+  }
+}
+/* Dog Life End *//*# sourceMappingURL=main.css.map */
