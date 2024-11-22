@@ -1,0 +1,116 @@
+/* Dog Life START */
+
+#lifesec {
+    border: 1px solid rgba(0, 0, 0, 0);
+    min-height: 100vh;
+
+    .lifewods {
+        font-family: "Open Sans", Arial, sans-serif;
+        text-align: center;
+        margin-top: 30px;
+
+        h1 {
+            font-weight: 500;
+            line-height: 1.2;
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #ffc107;
+            margin-top: 20px;
+        }
+    }
+
+    .mainn {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+
+        .mainleft {
+            margin-top: 40px;
+            width: 30%;
+            margin-left: 30px;
+
+            .dogimg {
+                width: 100%;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+
+        .mainRight {
+            display: flex;
+
+            border: 1px solid none;
+            margin-top: 40px;
+            margin-right: 50px;
+
+            p {
+                font-size: 17px;
+                color: rgba(0, 0, 0, 0.774);
+                font-family: "Open Sans", Arial, sans-serif;
+                letter-spacing: 2px;
+            }
+
+            h4 {
+                color: #ffc107;
+            }
+
+            .rightWords {
+                max-width: 400px;
+                height: 400px;
+
+            }
+
+            .rightWordss {
+                max-width: 400px;
+                height: 400px;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    #lifesec {
+        .mainn {
+            display: flex;
+            flex-direction: column;
+
+            .mainleft {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .mainRight {
+                display: flex;
+                flex-direction: column;
+
+                .rightWords {
+                    height: auto;
+
+                    p {
+                        margin-left: 20px;
+                    }
+                }
+
+                .rightWordss {
+                    p {
+                        margin-left: 20px;
+                    }
+                    h4{
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Dog Life End */
