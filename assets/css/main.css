@@ -96,17 +96,7 @@ li {
     margin-left: 20px;
   }
 }
-/* * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-ul,
-li {
-  list-style-type: none;
-}
-
+/* Dog Life End */
 .container {
   max-width: 1110px;
   margin: 0 auto;
@@ -341,4 +331,4 @@ li {
   .every_dog_section .swiper {
     padding: 10px !important;
   }
-}/*
+}/*# sourceMappingURL=main.css.map */
